@@ -1,4 +1,4 @@
-# Its For  Ubuntu
+# Its For  Ubuntu 14.04
 
 uname -r
 
@@ -23,4 +23,10 @@ sudo apt-get update
 sudo apt-get install docker-engine
 
 sudo service docker start
+
+sudo usermod -aG docker $USER
+
+sudo docker run hello-world
+
+sudo service docker status
 
